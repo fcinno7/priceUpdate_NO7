@@ -261,12 +261,12 @@ async function main() {
   try {
     // --------------------------------------   2012 KH--------------------------------------
 
-    const NHD_LIST = await playerSearch([201], 0); // playerSearch(시즌넘버, 최소오버롤)
-    let NHD_RESULTS = await playerPriceValue(
-      NHD_LIST,
+    const NO7_LIST = await playerSearch([839], 0); // playerSearch(시즌넘버, 최소오버롤)
+    let NO7_RESULTS = await playerPriceValue(
+      NO7_LIST,
       [1, 2, 3, 4, 5, 6, 7, 8]
     ); // playerPriceValue(데이터 , 강화등급)
-    await saveToDB(NHD_RESULTS);
+    await saveToDB(NO7_RESULTS);
 
     // -------------------------------------------------------------------------------------------------------------------------------
 
